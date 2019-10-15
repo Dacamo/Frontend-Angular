@@ -19,7 +19,8 @@ import { PeopleRegisterComponent } from './components/people-register/people-reg
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
