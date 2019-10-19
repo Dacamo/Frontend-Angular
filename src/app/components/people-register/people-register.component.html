@@ -17,14 +17,14 @@
               <div class="form-row">
                   <div class="form-group col-md-6">
                       <label for="nombres">Tipo documento</label>
-                      <select class="form-control" id="tipoDocIdentidad" name="tipoDocIdentidad" [(ngModel)]="persona.tipoDocumento" required>
+                      <select class="form-control" id="tipoDococumentoIdentidad" name="tipoDocumentoIdentidad" [(ngModel)]="persona.tipoDocumentoIdentidad" required>
                               <option>--Seleccione--</option>
                                 <option *ngFor="let documento of tipoDocumentos" [ngValue]="documento">{{documento.nombre}}</option>
                             </select>
                   </div>
                   <div class="form-group col-md-6">
-                      <label for="numeroDocumento">Numero documento</label>
-                      <input type="text" class="form-control" id="numeroDocumento" placeholder="Número de documento" name="numeroDocumento" [(ngModel)]="persona.numeroDocumento" minlength="3" #numeroDocumento="ngModel" required>
+                      <label for="nroDocumento">Numero documento</label>
+                      <input type="text" class="form-control" id="nroDocumento" placeholder="Número de documento" name="nroDocumento" [(ngModel)]="persona.nroDocumento" minlength="3" #numeroDocumento="ngModel" required>
                       <div class="alert alert-danger" *ngIf="numeroDocumento.invalid && (numeroDocumento.dirty || numeroDocumento.touched)">
                           <div *ngIf="numeroDocumento?.errors.required">Apellido es requerido</div>
                           <div *ngIf="numeroDocumento?.errors.minlength">Apellido debe terner al menos 3 caracteres</div>

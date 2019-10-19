@@ -17,6 +17,7 @@ export class PersonaService {
   }
 
   insert(persona: Persona):Observable<Persona>{
+    console.log("llega al servicio", persona)
     return this.http.post<Persona>(Endpoints.INSERTAR,persona,{headers:Header.HEADER_JSON});
   }
 }

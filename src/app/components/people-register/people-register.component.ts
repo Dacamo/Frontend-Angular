@@ -26,11 +26,12 @@ export class PeopleRegisterComponent implements OnInit {
   }
 
   insert(){
-      this.personaService.insert(this.persona).subscribe(
-           _ => {
-             this.router.navigate(["/listar"]);
-           }
-      )
-  }
+    this.personaService.insert(this.persona).subscribe(
 
+         _ => {
+
+           this.router.navigate(["/people-list"]);
+         }
+    )
+    }
 }
