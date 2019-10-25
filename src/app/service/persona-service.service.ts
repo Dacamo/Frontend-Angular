@@ -29,6 +29,7 @@ export class PersonaService {
   }
 
   actualizar(persona: Persona){
+    console.log("actualizar", persona);
     return this.http.put(Endpoints.UPDATE.concat(persona.id.toString()).concat("/persona"), persona);
   }
 }
