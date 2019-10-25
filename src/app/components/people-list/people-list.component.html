@@ -36,7 +36,7 @@
                 <td>{{persona.nroDocumento | uppercase}}</td>
                 <td>{{persona.apellido | uppercase}}</td>
                 <td>{{persona.telefono}}</td>
-                <td><a href="#" class="btn btn-primary btn-lg">Editar</a>
+                <td><a href="#" class="btn btn-primary btn-lg" [routerLink] = "['/people-edit', persona.id]" >Editar</a>
                   <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal" (click) = "showModal(persona)">Eliminar</button>
                 </td>
               </tr>

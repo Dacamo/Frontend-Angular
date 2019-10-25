@@ -1,0 +1,56 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a [routerLink]="['/listar']">Listar</a></li>
+      <li class="breadcrumb-item active" aria-current="page">crear</li>
+  </ol>
+</nav>
+
+<div class="card">
+  <div class="card-header">
+      Editar persona
+  </div>
+  <div class="card-body">
+      <blockquote class="blockquote mb-0">
+          <p>Favor diligenciar el formulario</p>
+          <form>
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <label for="inputEmail4">Tipo Documento</label>
+                      <select id="inputState" class="form-control">
+                          <option selected>Elegir</option>
+                          <option>Cédula</option>
+                          <option>Tarjeta de identidad</option>
+                        </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label for="inputPassword4">Numero documento</label>
+                      <input  type="text" class="form-control" id="inputPassword4" placeholder="número documento">
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <label for="nombre">Nombres</label>
+                      <input  type="text" class="form-control" id="nombre">
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label for="inputPassword4">Apellidos</label>
+                      <input type="text" class="form-control" id="inputPassword4" placeholder="apellidos">
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <label for="inputEmail4">Correo</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="correo">
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label for="inputPassword4">Teléfono</label>
+                      <input type="text" class="form-control" id="inputPassword4" placeholder="teléfono">
+                  </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Registrar</button>
+          </form>
+
+      </blockquote>
+  </div>
+</div>

@@ -10,6 +10,7 @@ import { PeopleRegisterComponent } from './components/people-register/people-reg
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { PeopleEditComponent } from './components/people-edit/people-edit.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {FormsModule} from '@angular/forms';
     HomeComponent,
     PeopleListComponent,
     PeopleRegisterComponent,
+    PeopleEditComponent,
 
   ],
   imports: [

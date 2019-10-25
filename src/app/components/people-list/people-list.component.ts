@@ -12,16 +12,17 @@ export class PeopleListComponent implements OnInit {
   personas: Persona[] = [];
   personaSeleccionada = new Persona();
 
+
   constructor(private personaService: PersonaService) { }
 
   ngOnInit() {
-
   this.personaService.listarPersona().subscribe(
     (personas) => {
       this.personas = personas;
     }
   );
   }
+
 
   eliminar(id:number){
     this.personaService.eliminar(id).subscribe(
@@ -34,4 +35,6 @@ export class PeopleListComponent implements OnInit {
   showModal(persona: Persona){
     this.personaSeleccionada = persona;
   }
+
+
 }

@@ -23,4 +23,12 @@ export class PersonaService {
   eliminar(id:number){
     return this.http.delete<Persona>(Endpoints.ELIMINAR.concat(id.toString()).concat("/persona"),{headers: Header.HEADER_TEXT})
  }
+
+  getById(id: number){
+    return this.http.get<Persona>(Endpoints.GET_BY_ID.concat(id.toString()).concat("/persona"),{headers: Header.HEADER_TEXT})
+  }
+
+  actualizar(persona: Persona){
+    return this.http.put(Endpoints.UPDATE.concat(persona.id.toString()).concat("/persona"), persona);
+  }
 }
