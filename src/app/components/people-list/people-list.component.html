@@ -20,9 +20,9 @@
             <thead class="thead-dark">
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Nombre</th>
                 <th scope="col">Tipo Documento</th>
                 <th scope="col">Numero Documento</th>
+                <th scope="col">Nombre</th>
                 <th scope="col">Apellidos</th>
                 <th scope="col">Teléfono</th>
                 <th scope="col">Acciones</th>
@@ -31,9 +31,9 @@
             <tbody>
               <tr *ngFor="let persona of personas">
                 <th scope="row">{{persona.id}}</th>
-                <td>{{persona.nombre | uppercase}}</td>
                 <td>{{persona.tipoDocumentoIdentidad.nombre | uppercase}}</td>
                 <td>{{persona.nroDocumento | uppercase}}</td>
+                <td>{{persona.nombre | uppercase}}</td>
                 <td>{{persona.apellido | uppercase}}</td>
                 <td>{{persona.telefono}}</td>
                 <td><a href="#" class="btn btn-primary btn-lg" [routerLink] = "['/people-edit', persona.id]" >Editar</a>
