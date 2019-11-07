@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { PeopleEditComponent } from './components/people-edit/people-edit.component';
+import { PeopleSearchComponent } from './components/people-search/people-search.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PeopleEditComponent } from './components/people-edit/people-edit.compon
     PeopleListComponent,
     PeopleRegisterComponent,
     PeopleEditComponent,
+    PeopleSearchComponent,
 
   ],
   imports: [

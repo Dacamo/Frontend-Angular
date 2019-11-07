@@ -27,13 +27,10 @@ export class PeopleEditComponent implements OnInit {
 
 
   ngOnInit() {
-
-
     const id = Number.parseInt(this.route.snapshot.paramMap.get('id'));
     this.personaService.getById(id).subscribe(
       (persona) =>{
         this.persona = persona;
-        console.log(this.persona);
       }
     )
 
