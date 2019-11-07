@@ -5,4 +5,5 @@ export class Endpoints {
   public static readonly ELIMINAR = "http://localhost:8080/personas/";
   public static readonly GET_BY_ID = "http://localhost:8080/personas/";
   public static readonly UPDATE= "http://localhost:8080/personas/";
+  public static readonly GET_BY_TIPO_DOCUMENTO_AND_NRO_DOCUMENTO= "http://localhost:8080/personas/Search";
 }
