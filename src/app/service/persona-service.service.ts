@@ -29,7 +29,10 @@ export class PersonaService {
   }
 
   actualizar(persona: Persona){
-    console.log("actualizar", persona);
     return this.http.put(Endpoints.UPDATE.concat(persona.id.toString()).concat("/persona"), persona);
+  }
+
+  getByTipoDocumentoAndNroDocumento (tipoDocumento: number, nroDocumento: number) :Observable<Persona[]>{
+    return this.http.get<Persona[]>(Endpoints.GET_BY_TIPO_DOCUMENTO_AND_NRO_DOCUMENTO.concat("/").concat(tipoDocumento.toString()).concat("/").concat(nroDocumento.toString()));
   }
 }
