@@ -22,7 +22,6 @@ export class PeopleEditComponent implements OnInit {
     private personaService: PersonaService,
     private tipoDocumentoService: TipoDocumentoService,
     private router: Router
-
   ) { }
 
 
